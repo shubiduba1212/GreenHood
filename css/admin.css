@@ -1,0 +1,81 @@
+@charset "utf-8";
+
+/*manager page*/
+
+#main_upper_area {width: 100%; height: 100px; margin-top: 120px; }
+#main_upper_area .frame {width:100%; margin: 0 auto;}
+
+#main_upper_area .frame .m_upper_txt {padding:20px 0 40px; color:#333;}
+#main_upper_area .frame .m_upper_txt h2 {font-size: 24px; text-transform: uppercase; text-align: center;}
+#manage_box {width: 100%; height: 100%; min-height: calc(100vh - 400px); margin: 0 auto;}
+#manage_box .manage_con {max-width: 1300px; padding: 20px; margin: 0 auto; font-size: 0;}
+
+#manage_box .manage_con aside { display: inline-block; width: calc(20% - 20px); margin: 0 10px; max-width: 150px; }
+#manage_box .manage_con aside ul { width: 100%; border: 1px solid #038e00; border-radius: 5px; box-shadow: 0 0 3px rgba(0,0,0,0.5);}
+#manage_box .manage_con aside ul li{padding: 20px 0; border-bottom: 1px solid #038e00; transition: background-color 0.5s;}
+#manage_box .manage_con aside ul li:last-child {border-bottom:none;}
+#manage_box .manage_con aside ul li a {display: block; width: 100%; line-height: 30px; font-size: 16px; font-weight: 400; color:#038e00; text-align: center;text-transform: uppercase;}
+#manage_box .manage_con aside ul li:hover {background-color: #038e00;}
+#manage_box .manage_con aside ul li:hover a {color:#fff;}
+#manage_box .manage_con .manage_sec { display: inline-block; vertical-align: top; width: calc(80% - 20px); margin: 0 10px; max-width:1000px; overflow: hidden;}
+#manage_box .manage_con .manage_sec h3.menu_tit{ padding: 20px 0; font-size: 24px; font-weight: 400; color:#333; text-align: center; text-transform: uppercase;}
+
+/*manage_list.php*/
+#manage_list {border-bottom: 1px solid #ccc;}
+#manage_list li {padding: 10px 0; font-size: 0; border-bottom: 1px solid #edefed;}
+#manage_list li:last-child {border-bottom:none;}
+#manage_list li span {display: inline-block; font-size: 14px; vertical-align: middle; text-align: center; padding: 10px 5px; color:#777;}
+#manage_list li span.field_1 {width: 60px;}
+#manage_list li span.field_2 {width: calc(100% - 220px);}
+#manage_list li span.field_3 {width: 80px;}
+#manage_list li span.field_4 {width: 80px;}
+
+#manage_list li span a { display: block; padding: 10px; color:#fff; background-color:#21bd5d; border-radius: 5px;}
+#manage_list li span a:hover {background-color: #019d09;}
+
+#manage_list li:first-child{background-color: #00b344; box-shadow: 0 1px 2px rgba(0,0,0,0.5); border-bottom:none;}
+#manage_list li:first-child span {font-weight: bold; color:#fff;}
+
+#manage_list li.manage {background-color: #edefed; border-bottom: 1px solid #ccc;}
+#manage_list li.manage span {color:#21bd5d;}
+#manage_list li.manage span a{color:#21bd21;}
+#manage_list li.manage span a:hover{color:#019d09;}
+
+#page_num {padding:20px 0; font-size: 0; text-align: center;}
+#page_num li {display: inline-block; margin: 0 10px; font-size: 13px;}
+#page_num li a {display: block; color: #777;}
+#page_num li .cur_page {font-size: 14px; color: #21bd21; font-weight: bold;}
+#page_num li:hover a {color:#21bd21;}
+
+
+
+
+
+@media(max-width: 767px){
+  #myP_box .myP_con aside ul li a {font-size: 12px;}
+  #manage_box .manage_con aside ul li a {font-size: 12px;}
+}
+
+@media(max-width: 566px){
+  #main_upper_area {margin-top: 25px; height:40px;}
+  #main_upper_area .frame .m_upper_txt h2 {font-size: 20px;}  
+
+  @media(min-height: 768px){
+    #manage_box {min-height: 668px;}
+  }
+}
+
+@media(max-width: 499px){
+  #manage_box .manage_con {padding: 20px 10px;}
+  #manage_box .manage_con aside {display: block; width: 100%; max-width: 95%;}
+  #manage_box .manage_con aside ul {font-size: 0;}
+  #manage_box .manage_con aside ul li {display: inline-block; width: calc(100% / 5 - 10px); padding: 10px 0; margin: 0 5px; border-bottom:none;}
+  #manage_box .manage_con aside ul li a {font-size: 12px;}
+  #manage_box .manage_con .manage_sec {width: 100%; margin: 0;}
+
+  #manage_list li span.field_1 {width: 40px;}
+  #manage_list li span.field_2 {width: calc(100% - 130px);}
+  #manage_list li span.field_3 {width: 40px;}
+  #manage_list li span.field_4 {width: 50px;}
+  #manage_list li span a {padding: 5px;}
+}

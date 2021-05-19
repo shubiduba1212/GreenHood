@@ -1,0 +1,272 @@
+@charset "utf-8";
+
+/*class-page*/
+
+/******************************class-list*************************/
+/*class-upper-area*/
+#main_upper_area {width: 100%; height: 100px; margin-top: 84px; }
+#main_upper_area .frame {width:100%; height: 100%;position: relative; margin: 0 auto;}
+#main_upper_area .frame .m_upper_img { width: 100%; height: 100%; margin: 0 auto; background-image: url(../img/class_banner.jpg); background-size: cover; background-position: 50% 50%;}
+
+#main_upper_area .frame .m_upper_txt {position: absolute; top:50%; left:50%; transform:translate(-50%,-50%); color:#fff;}
+#main_upper_area .frame .m_upper_txt h2 {font-size: 40px; text-transform: uppercase;}
+
+/*class_upper*/
+#class_upper {width: 100%; }
+#class_upper h2 { padding: 60px 0 40px; font-size: 30px; text-align: center; color:#015800;}
+#class_upper_box {width: 100%; padding-top: 20px; background-image: url(../img/class_upper2.jpg);background-size: cover; background-position: 50% 50%;}
+#class_con_box { max-width:1300px; margin: 0 auto; padding-bottom: 20px; font-size: 0;}
+.cl_view_box_01 {display: inline-block; width:calc(45% - 20px); height: 350px; margin: 0 10px; font-size: 0; vertical-align: top;}
+.cl_view_box_01 .cl_top {width: calc(100% - 20px); height: 100%; margin: 0 10px; background-size: cover; background-position: 50% 50%; background-image: url(../img/mask_class01.jpg); border-radius: 5px;}
+.cl_view_box {display: inline-block; width:calc(45% - 20px); height: 500px; margin: 0 10px; font-size: 0; vertical-align: top;}
+.cl_view_box .cl_top {width: calc(100% - 20px); height: 100%; margin: 5px 10px; background-size: cover; background-position: 50% 50%; background-image: url(../img/mask_class01.jpg); border-radius: 5px; transition: background-image 0.5s;}
+.cl_view_box .cl_bottom_bx { font-size: 0; width: 100%; height: calc(28% - 10px);}
+.cl_view_box .cl_bottom_bx .cl_bottom {display: inline-block; width: calc(100% / 3 - 20px); height: 100%; margin: 5px 10px;}
+.cl_view_box .cl_bottom_bx .cl_bottom a { display: block; width: 100%; height: 100%; background-size: cover; background-position: 50% 50%; border-radius:5px;}
+.cl_view_box .cl_bottom_bx .cl_bottom:nth-child(1) a {background-image: url(../img/mask_class04.jpg);}
+.cl_view_box .cl_bottom_bx .cl_bottom:nth-child(2) a {background-image: url(../img/mask_class05.jpg);}
+.cl_view_box .cl_bottom_bx .cl_bottom:nth-child(3) a {background-image: url(../img/mask_class06.jpg);}
+
+#class_con_box .cl_contxt {display: inline-block; width:calc(55% - 20px); margin: 0 10px; padding: 20px 20px 0;position: relative; background-color: #fff; border-radius: 5px;}
+#class_con_box .cl_contxt > span {display: block; font-size: 12px; text-align: right; }
+#class_con_box .cl_contxt .cl_title { padding: 20px 0; font-size: 24px; color:#038e00;}
+#class_con_box .cl_contxt .cl_tutor { padding: 10px 0; font-size: 16px; color:#555; }
+#class_con_box .cl_contxt .cl_sub {padding: 10px 0; font-size: 18px; color:#333}
+#class_con_box .cl_contxt .cl_content {padding: 20px 0; }
+#class_con_box .cl_contxt .cl_content p { padding: 10px 0; font-size: 14px; color:#555;}
+#class_con_box .cl_contxt .cl_content p.point { font-weight: bold; font-size: 15px; color:#038e00; }
+#class_con_box .cl_contxt .cl_content p span, #class_con_box .cl_contxt .cl_content p strong {font-size: 16px; color:#038e00; font-weight: bold; }
+#class_con_box .cl_contxt .cl_content ul {}
+#class_con_box .cl_contxt .cl_content ul li {list-style: circle; padding: 10px 0; margin-left: 20px; font-size: 18px; color:#038e00;}
+#class_con_box .cl_contxt .cl_info {padding: 20px 0; overflow: hidden; position: absolute; bottom:10px; right:20px;}
+#class_con_box .cl_contxt .cl_lower {padding: 20px 0; overflow: hidden; border-top: 2px solid #015800;}
+#class_con_box .cl_contxt .cl_lower .cl_price {float: left; font-size: 12px; color:#333; padding: 20px 10px 20px; }
+#class_con_box .cl_contxt .cl_lower span { font-size: 24px; color:#000; font-weight: 400;}
+#class_con_box .cl_contxt .cl_lower .cl_buttons {float: right;}
+#class_con_box .cl_contxt .cl_info .cl_button .detail_btn {outline:none; border-radius: 5px; border:none; padding: 20px; font-size: 16px; color:#fff; background-color: #038e00; cursor: pointer; text-align: center;}
+#class_con_box .cl_contxt .cl_info .cl_button .detail_btn:hover {background-color: #00aa55;}
+#class_con_box .cl_contxt .cl_lower .cl_buttons button { width: 100%; outline:none; border-radius: 5px; border:none; padding: 20px; font-size: 20px; color:#fff; background-color: #00c563; cursor: pointer;}
+#class_con_box .cl_contxt .cl_lower .cl_buttons button:hover {background-color: #038e00;}
+
+/*class_best*/
+#class_con_box .cl_view_contxt {display: inline-block; width:calc(55% - 20px); margin: 0 10px; padding: 20px 20px 0;position: relative; background-color: #fff; border-radius: 5px;}
+#class_con_box .cl_view_contxt > span {display: block; font-size: 12px; text-align: right; }
+#class_con_box .cl_view_contxt .cl_title { padding: 20px 0; font-size: 24px; color:#038e00;}
+#class_con_box .cl_view_contxt .cl_tutor { padding: 10px 0; font-size: 16px; color:#555; }
+#class_con_box .cl_view_contxt .cl_sub {padding: 10px 0; font-size: 18px; color:#333}
+#class_con_box .cl_view_contxt .cl_content {padding: 20px 0; }
+#class_con_box .cl_view_contxt .cl_content p { padding: 10px 0; font-size: 14px; color:#555;}
+#class_con_box .cl_view_contxt .cl_content p.point { font-weight: bold; font-size: 15px; color:#038e00; }
+#class_con_box .cl_view_contxt .cl_content p span, #class_con_box .cl_view_contxt .cl_content p strong {font-size: 16px; color:#038e00; font-weight: bold; }
+#class_con_box .cl_view_contxt .cl_content ul {}
+#class_con_box .cl_view_contxt .cl_content ul li {list-style: circle; padding: 10px 0; margin-left: 20px; font-size: 18px; color:#038e00;}
+#class_con_box .cl_view_contxt .cl_info {padding: 20px 0; overflow: hidden; position: absolute; bottom:10px; right:20px;}
+#class_con_box .cl_view_contxt .cl_lower {padding: 20px 0; overflow: hidden; border-top: 2px solid #015800;}
+#class_con_box .cl_view_contxt .cl_lower .cl_price {font-size: 12px; color:#333; padding: 20px 10px 20px; }
+#class_con_box .cl_view_contxt .cl_lower span { font-size: 24px; color:#000; font-weight: 400;}
+#class_con_box .cl_view_contxt .cl_lower .cl_buttons {width: 100%; text-align: center;}
+#class_con_box .cl_view_contxt .cl_info .cl_button .detail_btn {outline:none; border-radius: 5px; border:none; padding: 20px; font-size: 16px; color:#fff; background-color: #038e00; cursor: pointer; text-align: center;}
+#class_con_box .cl_view_contxt .cl_info .cl_button .detail_btn:hover {background-color: #00aa55;}
+#class_con_box .cl_view_contxt .cl_lower .cl_buttons button {display: inline-block; width: calc(45% - 20px); margin: 0 10px; outline:none; border-radius: 5px; border:none; padding: 20px; font-size: 20px; color:#fff; background-color: #00c563; cursor: pointer;}
+#class_con_box .cl_view_contxt .cl_lower .cl_buttons button:hover {background-color: #038e00;}
+
+/*class-main*/
+#main_container {width: 100%; height: 100%;}
+
+/*register-button*/
+#main_container .buttons {padding: 20px 40px 20px 0; text-align: right; font-size: 0;}
+#main_container .buttons li {display: inline-block; margin: 0 5px;}
+#main_container .buttons li button {padding: 10px 20px; font-size: 16px; border:none; border-radius: 4px; background-color: #edefed; cursor: pointer;}
+#main_container .buttons li:hover button {background-color: #038e00; color:#fff;} 
+
+#main_container #class_con {max-width: 1300px; padding: 60px 40px; margin: 0 auto; font-size: 0; }
+.side_con {display: inline-block; width:calc(30% - 20px); max-width:240px; padding: 20px; margin: 0 10px; border-radius: 5px; background-color: #f1f5d7; vertical-align: top;}
+.side_con .side_bar {width: 100%;}
+.side_con .side_bar .view_btn{padding:10px; height: 37px; transition: border-bottom 0.5s; overflow: hidden;}
+.side_con .side_bar .view_btn a {display:inline-block; font-size: 16px;font-weight: 400; color: #038e00;}
+.side_con .side_bar .view_btn span {display: inline-block; font-size: 14px; color:#777; padding-left: 10px;}
+.side_con .side_bar .view_btn:hover a {border-bottom:1px solid #038e00;}
+.side_con .side_bar .class_cate {padding: 10px;}
+.side_con .side_bar .class_cate h3 {color: #333; padding-bottom: 20px; font-size: 18px;}
+.side_con .side_bar .class_cate li{ height: 30px; }
+.side_con .side_bar .class_cate li a {display: block; float: left; width: 80%; line-height: 30px; font-size: 16px; color:#999; font-weight: 400;}
+.side_con .side_bar .class_cate li span {display: block; float: right; width: 20%; line-height: 30px;text-align: center; font-size: 14px; color:#999;}
+.side_con .side_bar .class_cate li:hover a {color:#026d00; font-weight: 400;}
+
+/*class_list*/
+
+.class_contents {display: inline-block; width: calc(70% - 20px); margin: 0 10px;padding: 20px; vertical-align: top;}
+.class_contents .category_tit {padding-bottom: 20px;}
+.class_contents .category_tit h3{font-size: 20px; color:#038e00; font-weight: 400; text-align: center;}
+.class_contents .class_sort{width: 130px; position: relative; float: right;}
+
+/*class_sort buttons*/
+.class_contents .class_sort button{width: 100%; padding: 10px;  border-radius: 4px; border: 1px solid #999; background-color: #fff; outline: none; cursor: pointer;}
+.class_contents .class_sort button span {font-size: 12px;}
+.class_contents .class_sort button .sort_name {float: left;}
+.class_contents .class_sort button .arrow {float: right; color:#014e00;}
+.class_contents .class_sort button.active{width: 100%; padding: 10px; border-radius: 4px 4px 0 0; border: 1px solid #038e00; border-bottom:none; background-color: #fff; outline:none; cursor: pointer;}
+.class_contents .class_sort ul{position: absolute; top:37px; left:0; width: 100%; border: 1px solid #038e00; border-top:none;background-color: #fff; border-radius: 0 0 4px 4px; display: none; z-index: 50; }
+.class_contents .class_sort ul li{border-bottom: 1px solid #777;}
+.class_contents .class_sort ul li:hover{background-color: #b5e58c;}
+.class_contents .class_sort ul li:first-child {border-top: 1px solid #777;}
+.class_contents .class_sort ul li:last-child {border:none; border-radius: 0 0 4px 4px; }
+.class_contents .class_sort ul li a {display: block; color:#555; padding: 10px; font-size: 12px;}
+
+
+/*class*/
+.class_contents .class_list {width: 100%; padding: 70px 10px 0; font-size: 0;}
+.class_contents .class_list li{ width: calc(100% / 3 - 20px); margin: 0 10px 20px; padding:10px; border-radius: 4px; display: inline-block; vertical-align: top; transition: box-shadow 0.5s;}
+.class_contents .class_list li:hover{box-shadow: 0 0 8px rgba(0,0,0,0.75);}
+.class_contents .class_list li a .cl_img {width: 100%; height: 250px; position: relative; overflow: hidden; border-radius: 3px; background-color: #fff; cursor: pointer;}
+.class_contents .class_list li a .cl_img img {width: 100%; height: 100%; position: absolute; left:50%; transform:translateX(-50%);}
+.class_contents .class_list li:hover a .cl_img img {transform:translateX(-50%) scale(1.05) ;}
+
+.class_contents .class_list li a .cl_title { padding: 10px 0; font-size: 14px; color:#333;}
+.class_contents .class_list li a .cl_tutor{ padding-bottom: 20px; color:#555;font-size: 12px;}
+.class_contents .class_list li a .cl_sub {/*text-overflow: ellipsis; white-space: nowrap; overflow: hidden;*/ height:30px;padding-bottom: 10px; font-size: 14px; color: #555; font-weight: 400;}
+
+.class_contents .class_list li .cl_info {padding: 10px 0; display: flex; justify-content: space-between; align-items: center;}
+
+.class_contents .class_list li .cl_info .cl_price {font-weight: bold; color:#333; font-size: 14px;}
+.class_contents .class_list li .cl_info .cl_price span {font-size: 14px;}
+
+
+.class_contents .class_list li .cl_info .pd_fav button.unfav {width: 20px; height: 20px; background-image: url(../img/mod_heart01.png); background-size: cover; background-position: 0 0; outline:none; border:none; background-color: transparent; background-repeat: no-repeat; position: relative; z-index: 20; cursor: pointer;}
+.class_contents .class_list li .cl_info .pd_fav button.faved {width: 20px; height: 20px;  background-image: url(../img/mod_heart02.png); background-size: cover; background-position: 0 0; outline:none; border:none; background-color: transparent; background-repeat: no-repeat; position: relative; z-index: 20;cursor: pointer;}
+  
+
+#page_num {padding:20px 0; font-size: 0; text-align: center;}
+#page_num li {display: inline-block; margin: 0 10px; font-size: 13px;}
+#page_num li a {display: block; color: #777;}
+#page_num li .cur_page {font-size: 14px; color: #038e00; font-weight: bold;}
+#page_num li:hover a {color:#038e00;}
+
+
+
+/******************************class-form*************************/
+#class_box {padding: 80px 40px; max-width:1300px; height: 100%; min-height: calc(100vh - 400px); margin: 0 auto;}
+#class_box #class_form {border-bottom: 1px solid #ccc;}
+#class_box #class_form li {padding: 10px 0; font-size: 0;}
+#class_box #class_form li > div {display: inline-block; font-size: 14px; color:#777; vertical-align: top; padding: 0 10px;} 
+
+#class_box #class_form li > div.label {width: 160px;}
+#class_box #class_form li > div.label label{width: 100%; line-height: 36px; font-weight: bold;}
+#class_box #class_form li > div.input {width: calc(100% - 160px); position: relative; }
+#class_box #class_form li > div.input input { width: 100%; height: 36px; border: 1px solid #ccc; border-radius: 4px; }
+#class_box #class_form li > div.input p {line-height: 36px;}
+#class_box #class_form li > div.input textarea {width: 100%; height: 360px; resize:none; border: 1px solid #ccc; border-radius: 4px; padding: 8px 0;}
+
+#class_box #class_form li > div.input input[type='file'] {border: none; width: auto; outline: none; cursor: pointer; position: absolute; top: 7px;}
+
+#class_box .buttons {padding: 20px 0; text-align: right; font-size: 0;}
+#class_box .buttons li {display: inline-block; margin: 0 5px;}
+#class_box .buttons li button {padding: 10px 20px; font-size: 16px; border:none; border-radius: 4px; background-color: #edefed; cursor: pointer;}
+#class_box .buttons li:hover button {background-color: #038e00; color:#fff;} 
+
+/******************************class-view*************************/
+#class_box {width: 100%; height: 100%; min-height: calc(100vh - 400px); padding: 80px 40px; }
+#class_detail { max-width: 1000px; margin: 0 auto; padding: 20px 0; overflow: hidden;}
+#class_detail .cl_view {float: left; width: 400px; height: 400px; background-size: cover; background-position: 50% 50%;}
+#class_detail .cl_contxt {float: right; width: calc(100% - 400px); padding-left:20px;}
+#class_detail .cl_contxt .cl_title {font-size: 24px; color:#000; padding: 20px 0;}
+#class_detail .cl_contxt .cl_tutor { font-size: 16px; color:#222;padding: 20px 0;}
+#class_detail .cl_contxt .cl_sub { font-size: 18px; color:#222;padding: 20px 0;}
+#class_detail .cl_contxt .cl_content { font-size: 14px; color:#555; padding: 20px 0;}
+#class_detail .cl_contxt .cl_info {border-top: 2px solid #000; border-bottom: 2px solid #000; padding: 20px 0;}
+#class_detail .cl_contxt .cl_info .cl_price {font-size: 12px; color:#333; padding: 20px 0; }
+#class_detail .cl_contxt .cl_info span { font-size: 18px; color:#000; font-weight: 400;}
+#class_detail .cl_contxt .cl_buttons {font-size: 0; max-width: 600px; padding: 20px 0;}
+#class_detail .cl_contxt .cl_buttons .order{display: inline-block; width:calc(40% - 20px); margin: 0 10px;}
+#class_detail .cl_contxt .cl_buttons .order button { width: 100%; outline:none; border-radius: 5px; border:none; padding: 20px 0; font-size: 20px; color:#fff; background-color: #038e00; cursor: pointer;}
+#class_detail .cl_contxt .cl_buttons .cart {display: inline-block; width:calc(40% - 20px); margin: 0 10px;text-align: center;}
+#class_detail .cl_contxt .cl_buttons .cart button { width: 100%; outline:none; border-radius: 5px; border:none; padding: 20px 0; font-size: 20px; color:#fff; background-color: #23b100;cursor: pointer;}
+#class_detail .cl_contxt .cl_buttons .pd_fav { display: inline-block; width:calc(20% - 20px); margin: 0 10px; vertical-align: top; padding-top: 6px; text-align: center;}
+#class_detail .cl_contxt .cl_buttons .pd_fav span { display: block; padding-top: 10px; font-size: 12px; color:#333; font-weight: 400; }
+#class_detail .cl_contxt .cl_buttons .pd_fav button.unfav {width: 31px; height: 30px;  background-image: url(../img/mod_heart01.png); background-size: cover; background-position: 0 0; outline:none; border:none; background-color: transparent; background-repeat: no-repeat; position: relative; z-index: 20; cursor: pointer;}
+#class_detail .cl_contxt .cl_buttons .pd_fav button.faved {width: 31px; height: 30px;  background-image: url(../img/mod_heart02.png);background-size: cover; background-position: 0 0; outline:none; border:none; background-color: transparent; background-repeat: no-repeat; position: relative; z-index: 20; cursor: pointer;}
+
+
+
+
+@media(max-width:1200px){
+  .class_contents .class_list li {width: calc(100% / 3 - 20px);}
+  .class_contents .class_list li a .cl_img {height: 198px;}
+  #class_con_box .cl_contxt .cl_info {padding: 20px 0; overflow: hidden; position: absolute; bottom:-10px; right:20px;}
+}
+
+
+@media(max-width:991px){
+  .class_contents .class_list li {width: calc(50% - 20px);}
+  #class_con_box .cl_contxt .cl_info .cl_button .detail_btn {font-size: 14px; padding: 10px; }
+  #class_con_box .cl_contxt .cl_info {bottom:-15px;}
+}
+
+@media(max-width:767px){
+  .side_con {display: block; width:100%; max-width:100%; padding: 20px; margin: 0 10px; border-radius: 5px; background-color: #f1f5d7; font-size: 0;}
+  .side_con .side_bar .class_cate li{ display: inline-block; width:calc(50% - 20px ); margin: 0 10px;}
+  .side_con .side_bar .class_cate li a {display: inline-block; float: none;}
+  .side_con .side_bar .class_cate li span {display: inline-block; float:none;}
+  .class_contents {display: block; width: 100%; padding: 20px;}
+  .class_contents .class_list li {width: calc(50% - 20px);}
+  .class_contents .class_list li a .cl_img {height: 265px;}
+
+  #class_detail .cl_view {width: 250px; height: 300px;}
+  #class_detail .cl_contxt {width: calc(100% - 250px);}
+  #class_con_box .cl_contxt .cl_info .cl_button .detail_btn {font-size: 12px; padding:5px; }
+  #class_con_box .cl_contxt .cl_info {bottom:-15px;}
+}
+
+@media(max-width: 566px){
+  #main_upper_area {margin-top: 25px; height:40px;}
+  #main_upper_area .frame .m_upper_txt h2 {font-size: 20px;}
+
+  .side_con {display: block; width:100%; max-width:100%; padding: 20px; margin: 0 auto; border-radius: 5px; background-color: #f1f5d7; font-size: 0;}
+  .side_con .side_bar .class_cate h3 {font-size: 16px;}
+  .side_con .side_bar .class_cate li{ display: inline-block; width:calc(50% - 20px ); margin: 0 10px;}
+  .side_con .side_bar .class_cate li a {display: inline-block; float: none; letter-spacing: -1px; font-size: 14px;}
+  .side_con .side_bar .class_cate li span {display: inline-block; float:none;}
+  #main_container #class_con {padding: 60px 10px;}
+  #class_box {padding: 20px 10px;}
+
+  .class_contents {display: block; width: 100%; padding: 20px 0; margin: 0 auto;}
+  .class_contents .class_list {padding: 70px 0;}
+  .class_contents .class_list li {width: calc(50% - 20px);}
+  .class_contents .class_list li a .cl_img {height: 164px;}
+  .class_contents .class_list li a .cl_sub {height: 50px;}
+
+  .cl_view_box {display: block; width: 90%; margin: 0 auto; height: 300px;}
+  #class_detail .cl_view {float: none; width: 100%; height: 250px;}
+  #class_detail .cl_contxt {float: none; width: 100%; padding:0 10px;}
+  .cl_view_box_01 {width: calc(100% - 20px);}
+  #class_con_box .cl_contxt {display: block; width: calc(90% - 20px); margin: 30px auto 0; padding-bottom: 20px;}
+  #class_detail .cl_contxt .cl_tutor {padding:0;}
+  #class_detail .cl_contxt .cl_sub {padding: 10px 0; font-size: 16px;}
+  #class_con_box .cl_view_contxt {display: block; width: calc(90% - 20px); margin: 100px auto 0; padding-bottom: 20px;}
+  #class_detail .cl_contxt .cl_buttons .order button {font-size: 16px;}
+  #class_detail .cl_contxt .cl_buttons .cart button {font-size: 16px;}
+  #class_con_box .cl_contxt .cl_lower .cl_buttons{float: none;}
+  #class_con_box .cl_contxt .cl_lower .cl_buttons .sign_btn {margin-bottom: 20px;}
+  #class_con_box .cl_view_contxt .cl_lower .cl_buttons {float: none;}
+  #class_con_box .cl_view_contxt .cl_lower .cl_buttons .sign_btn {margin-bottom: 20px;}
+
+}
+
+@media(max-width: 499px){
+  #class_box {padding: 20px 10px;}
+  .class_title {font-size: 20px;}
+
+  #class_box #class_form li > div {display: block;}
+  #class_box #class_form li:nth-child(1) > div {display: inline-block;}
+  #class_box #class_form li > div.input {width: 100%; display: block;}
+  #class_box #class_form li:nth-child(1) > div.input {display: inline-block; width: calc(100% - 160px);}
+}
+
+
+
+
+
+
+
+
+

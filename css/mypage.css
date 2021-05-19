@@ -1,0 +1,89 @@
+@charset "utf-8";
+
+/*mypage*/
+
+#main_upper_area {width: 100%; height: 100px; margin-top: 150px; }
+#main_upper_area .frame {width:100%; margin: 0 auto;}
+
+#main_upper_area .frame .m_upper_txt {padding:20px 0 40px; }
+#main_upper_area .frame .m_upper_txt h2 {font-size: 40px; text-transform: uppercase; text-align: center;}
+#main_upper_area .frame .m_upper_txt h2 a {display: block; color: #333;}
+#myP_box {width: 100%; height: calc(100% - 400px); min-height:calc(100vh - 400px); margin: 0 auto; padding-bottom: 100px;}
+#myP_box .myP_con {max-width: 1300px; padding: 20px; margin: 0 auto; font-size: 0;}
+
+#myP_box .myP_con aside { display: inline-block; width: calc(20% - 20px); margin: 0 10px; max-width: 150px; }
+#myP_box .myP_con aside ul { width: 100%; border: 1px solid #038e00; border-radius: 5px; box-shadow: 0 0 3px rgba(0,0,0,0.5);}
+#myP_box .myP_con aside ul li{padding: 20px 0; border-bottom: 1px solid #038e00; transition: background-color 0.5s;}
+#myP_box .myP_con aside ul li:last-child {border-bottom:none;}
+#myP_box .myP_con aside ul li a {display: block; width: 100%; line-height: 30px; font-size: 16px; font-weight: 400; color:#038e00; text-align: center;}
+#myP_box .myP_con aside ul li:hover {background-color: #038e00;}
+#myP_box .myP_con aside ul li:hover a {color:#fff;}
+#myP_box .myP_con .profile { display: inline-block; vertical-align: top; width: calc(80% - 20px); margin: 0 10px; max-width:1000px; overflow: hidden; }
+#myP_box .myP_con .profile .name { padding: 20px 0; float: right;}
+#myP_box .myP_con .profile .name p {font-size: 20px; font-weight: 300;color:#555;}
+#myP_box .myP_con .profile .name p span {font-size: 24px; font-weight: 400; color:#038e00;}
+#myP_box .myP_con .profile .summary{ overflow: hidden;border-bottom: 2px solid #555; }
+#myP_box .myP_con .profile .summary .name {float: right; padding: 20px 10px;}
+#myP_box .myP_con .profile .summary .name p{font-size: 16px;}
+#myP_box .myP_con .profile .summary .name p span{color:#038e00; font-weight: 400;}
+#myP_box .myP_con .profile .summary .my_info {float: left; padding: 20px 10px; overflow: hidden;}
+#myP_box .myP_con .profile .summary .my_info ul{}
+#myP_box .myP_con .profile .summary .my_info ul li{float: left; padding: 0 10px; font-size: 16px; color:#555;}
+#myP_box .myP_con .profile .summary .my_info ul li span {color:#038e00;}
+#myP_box .myP_con .profile .context { padding: 20px 0; color:#555; text-align: center;}
+#myP_box .myP_con .profile .context > p {font-size: 18px; font-weight: 300; line-height: 2;}
+#myP_box .myP_con .profile .context p span{font-size: 20px; font-weight: 400; color:#038e00;}
+
+/*fav_list.php*/
+.fav_list li.emp_cart {padding: 50px 0; font-size: 18px; text-align: center;}
+
+.fav_list {width: 100%; padding: 70px 0; font-size: 0; text-align: left;}
+.fav_list li{ width: calc(25% - 20px); margin: 0 10px 20px; padding:10px; border-radius: 4px; display: inline-block; vertical-align: top; transition: box-shadow 0.5s;}
+.fav_list li:hover{box-shadow: 0 0 8px rgba(0,0,0,0.75);}
+.fav_list li a .pd_img {width: 100%; height: 198px; position: relative; overflow: hidden; border-radius: 3px; background-color: #fff; cursor: pointer;}
+.fav_list li a .pd_img img {width: 100%; height: 100%; position: absolute; left:50%; transform:translateX(-50%);}
+.fav_list li:hover a .pd_img img {transform:translateX(-50%) scale(1.05) ;}
+
+.fav_list li a .pd_brand { padding: 10px 0; font-size: 14px; color:#333; text-align: left;}
+.fav_list li a .pd_name {height:30px;padding-bottom: 10px; font-size: 14px; color: #555; font-weight: 400; text-align: left; line-height: 1.2;}
+
+.fav_list li .pd_info {padding: 10px 0; display: flex; justify-content: space-between; align-items: center;}
+
+.fav_list li .pd_info .pd_price {font-weight: bold; color:#333; font-size: 14px;}
+.fav_list li .pd_info .pd_price span {font-size: 14px;}
+.fav_list li .pd_info .pd_fav button.faved {width: 20px; height: 20px;  background-image: url(../img/mod_heart02.png);
+background-size: cover; background-position: 0 0; outline:none; border:none; background-color: transparent; background-repeat: no-repeat; position: relative; z-index: 20; cursor: pointer;}
+
+#page_num {padding:20px 0; font-size: 0; text-align: center;}
+#page_num li {display: inline-block; margin: 0 10px; font-size: 13px;}
+#page_num li a {display: block; color: #777;}
+#page_num li .cur_page {font-size: 14px; color: #038e00; font-weight: bold;}
+#page_num li:hover a {color:#038e00;}
+
+@media(max-width: 991px){
+  
+  #myP_box .myP_con aside ul li a {font-size: 12px;}
+  .fav_list li {width: calc(100% / 3 - 20px); vertical-align: baseline; padding: 5px;}
+  .fav_list li a .pd_img {height: 150px;}
+}
+
+@media(max-width: 566px){
+  .fav_list li {width: calc(50% - 20px);}
+  #main_upper_area {margin-top: 25px; height:40px;}
+  #main_upper_area .frame .m_upper_txt h2 {font-size: 20px;}
+}
+
+@media(max-width: 499px){
+  #myP_box .myP_con {padding: 20px 10px;}
+  #myP_box .myP_con aside {display: block; position: fixed; left: 50%; transform: translateX(-50%); width: calc(100% - 20px); max-width: 250px; background-color: #fff; z-index: 30;}
+  #myP_box .myP_con aside ul {font-size: 0;}
+  #myP_box .myP_con aside ul li {display: inline-block; width: 50%; border-bottom:none; padding: 10px 0;}
+  #myP_box .myP_con .profile {width: calc(100% - 20px);}
+
+  .fav_list {padding: 70px 0;}
+  .fav_list li {width: calc(100% - 20px); margin: 20px 10px; padding: 5px;}
+  .fav_list li a .pd_img {height: 290px;}
+}
+@media(min-height:700px){
+  #myP_box {padding-bottom: 300px;}
+}

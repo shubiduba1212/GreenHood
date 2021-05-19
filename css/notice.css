@@ -1,0 +1,128 @@
+@charset "utf-8";
+
+/*notice-page*/
+
+/******************************notice-list*************************/
+/*notice-upper-area*/
+#main_upper_area {width: 100%; height: 100px; margin-top: 84px; }
+#main_upper_area .frame {width:100%; height: 100%;position: relative; margin: 0 auto;}
+#main_upper_area .frame .m_upper_img { width: 100%; height: 100%; margin: 0 auto; background-image: url(../img/notice_banner.jpg); background-size: cover; background-position: 50% 50%;}
+
+#main_upper_area .frame .m_upper_txt {position: absolute; top:50%; left:50%; transform:translate(-50%,-50%); color:#fff;}
+#main_upper_area .frame .m_upper_txt h2 {font-size: 40px; text-transform: uppercase;}
+
+/*side_menu*/
+#side_menu {position: fixed; top:300px; left:50px;}
+#side_menu aside { }
+#side_menu aside ul{ background-color: #fff; width: 150px; border: 2px solid #038e00; border-radius: 5px;}
+#side_menu aside ul li{ width: 100%; border-bottom: 2px solid #038e00;transition:background-color 0.5s;}
+#side_menu aside ul li:last-child {border-bottom:none;}
+#side_menu aside ul li a{ display: block; width: 100%; height: 100%; padding: 20px 0;color:#038e00; font-size: 16px; font-weight: 400;  text-align: center;}
+#side_menu aside ul li:hover {background-color: #038e00; }
+#side_menu aside ul li:hover a {color:#fff; font-weight: bold; }
+
+
+/*notice common*/
+#notice_box {max-width: 1000px; min-height: 550px; margin: 0 auto; padding: 20px 0 100px;}
+#notice_box h2 {border-bottom: 1px solid #ccc; font-size: 20px; padding-bottom: 10px; color:#038e00;}
+
+#notice_box .buttons {padding: 20px 0; text-align:right; font-size: 0; }
+#notice_box .buttons li {display: inline-block; margin: 0 5px;}
+#notice_box .buttons li button {padding: 10px 20px; font-size: 16px; border: none; border-radius: 4px; background-color: #edefed; cursor: pointer;}
+#notice_box .buttons li:hover button {background-color: #04ac01; color:#fff;}
+
+/*notice_form.php*/
+#notice_box #notice_form {border-bottom: 1px solid #ccc;}
+#notice_box #notice_form li {padding: 10px 0; font-size: 0;}
+#notice_box #notice_form li > div {display: inline-block; font-size: 14px; color:#777; vertical-align: top; padding: 0 10px;} 
+
+#notice_box #notice_form li > div.label {width: 160px;}
+#notice_box #notice_form li > div.label label{width: 100%; line-height: 36px; font-weight: bold;}
+#notice_box #notice_form li > div.input {width: calc(100% - 160px); position: relative; }
+#notice_box #notice_form li > div.input input { width: 100%; height: 36px; border: 1px solid #ccc; border-radius: 4px; }
+#notice_box #notice_form li > div.input p {line-height: 36px;}
+#notice_box #notice_form li > div.input textarea {width: 100%; height: 360px; resize:none; border: 1px solid #ccc; border-radius: 4px; padding: 8px 0;}
+
+#notice_box #notice_form li > div.input input[type='file'] {border: none; width: auto; outline: none; cursor: pointer; position: absolute; top: 7px;}
+
+#notice_box #notice_form li > div.input select {width: 150px; height: 36px; border-radius: 4px; border: 1px solid #ccc;}
+
+
+/*notice_list.php*/
+#notice_list {border-bottom: 1px solid #ccc;}
+#notice_list li {padding: 10px 0; font-size: 0; border-bottom: 1px solid #edefed;}
+#notice_list li:last-child {border-bottom:none;}
+#notice_list li span {display: inline-block; font-size: 14px; vertical-align: middle; text-align: center; padding: 10px 5px; color:#777;}
+#notice_list li span.field_1 {width: 60px;}
+#notice_list li span.field_2 {width: calc(100% - 460px);}
+#notice_list li span.field_3 {width: 80px;}
+#notice_list li span.field_4 {width: 80px;}
+#notice_list li span.field_5 {width: 180px;}
+#notice_list li span.field_6 {width: 60px;}
+
+#notice_list li span a {color:#777;}
+#notice_list li span a:hover {color:#333;}
+
+#notice_list li:first-child{border-bottom: 1px solid #222;}
+#notice_list li:first-child span {font-weight: bold; color:#555;}
+
+#notice_list li.notice {background-color: #edefed; border-bottom: 1px solid #ccc;}
+#notice_list li.notice span {color:#21bd5d;}
+#notice_list li.notice span a{color:#21bd21;}
+#notice_list li.notice span a:hover{color:#019d09;}
+
+#page_num {padding:20px 0; font-size: 0; text-align: center;}
+#page_num li {display: inline-block; margin: 0 10px; font-size: 13px;}
+#page_num li a {display: block; color: #777;}
+#page_num li .cur_page {font-size: 14px; color: #21bd21; font-weight: bold;}
+#page_num li:hover a {color:#21bd21;}
+
+/*notice_view.php*/
+#view_content {}
+#view_content li{padding: 10px 0; border-bottom: 1px solid #ccc;font-size: 14px;}
+#view_content li:after {content:""; display: block; clear: both;}
+
+#view_content li span:first-child {float: left;}
+#view_content li span:last-child {float: right;}
+#view_content li a {color: #777; }
+#view_content li a:hover {color: #21bd21; }
+#view_content li p {padding-top: 10px;}
+
+@media(max-width:991px){
+  #notice_box {padding: 20px;}
+  #side_menu { display: none;}
+  #notice_list li span.field_1 {max-width: 10%;}
+  #notice_list li span.field_2 {width: 40%;}
+  #notice_list li span.field_3 {width: 20%;}
+  #notice_list li span.field_4 {display: none;}
+  #notice_list li span.field_5 {max-width: 20%;}
+  #notice_list li span.field_6 {max-width: 10%;}
+}
+
+
+@media(max-width:767px){
+  #notice_box {max-width: 1000px;}
+  #notice_box h2 {padding-left: 20px; }
+  #notice_list li span.field_1 {max-width: 10%;}
+  #notice_list li span.field_2 {width: 50%;}
+  #notice_list li span.field_3 {width: 30%;}
+  #notice_list li span.field_5 {display: none;}
+  #notice_list li span.field_6 {max-width: 10%;}
+}
+
+@media(max-width:566px){
+  #main_upper_area {margin-top: 25px; height:40px;}
+  #main_upper_area .frame .m_upper_txt h2 {font-size: 20px;}
+  #notice_box {height: calc(100% - 366px);}
+  #view_content {padding: 10px;}
+}
+
+@media(max-width: 499px){
+  #notice_box {padding: 20px 10px;}
+  .notice_title {font-size: 20px;}
+
+  #notice_box #notice_form li > div {display: block;}
+  #notice_box #notice_form li:nth-child(1) > div {display: inline-block;}
+  #notice_box #notice_form li > div.input {width: 100%; display: block;}
+  #notice_box #notice_form li:nth-child(1) > div.input {display: inline-block; width: calc(100% - 160px);}
+}

@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+/*join-page*/
+#main_container {width: 100%; padding: 100px 20px; margin: 0 auto; }
+#main_container .join_box{ font-size: 0; }
+#main_container .join_box h2{ font-size: 30px; padding: 80px 0 80px; text-align: center; font-weight: normal;text-transform: uppercase;}
+#main_container .join_box p {max-width: 1000px; margin: 0 auto; padding: 10px 0; font-size: 14px; color:#777; text-align: right; }
+#main_container .join_box p span{color:#ff0000; font-size: 16px;}
+#main_container .join_box .form{ max-width: 1000px; margin: 0 auto; font-size: 0; border-top: 1px solid #ccc; padding: 20px 0;}
+#main_container .join_box .form .email {display: block; font-size: 14px; color:#555; padding: 20px;}
+#main_container .join_box .form .email strong {font-weight: 16px; color:#038e00; font-weight: 400;}
+#main_container .join_box .form .label {display: inline-block; height: 40px; width:20%; padding-left: 20px;}
+#main_container .join_box .form .input {display: inline-block; height: 40px; width:60%; max-width: 600px; min-width: 240px;}
+#main_container .join_box .form .label label{ width: 100%; line-height: 40px; font-size: 14px; color:#555;}
+#main_container .join_box .form .label label span{color:#ff0000; font-size: 16px;}
+#main_container .join_box .form .input {font-size: 16px; color:#555;}
+#main_container .join_box .form .input input{ width: 100%; padding-left: 20px; line-height: 38px; border:none; background-color: rgba(3,142,0,0.2);}
+#main_container .join_box .form .input input[name='email1']{width: calc(30% - 20px); max-width: 160px;}
+#main_container .join_box .form .input input[name='email2']{width: calc(70% - 20px); max-width: 400px;}
+#main_container .join_box .form .input input:focus {background-color: #fff; color:#555;}
+#main_container .join_box .form .add_btn {display: inline-block; width: 20%;padding-left: 20px; color:#ff0000; font-size: 12px;}
+#main_container .join_box .form .add_btn button { height: 100%; border: none; font-size: 14px; padding: 8px 15px;background-color: #23b100; color:#fff; border-radius: 4px; cursor: pointer; }
+#main_container .join_box .form .add_btn button:hover {background-color: #038e00;}
+
+/*join_buttons*/
+#main_container .join_box .buttons { padding: 40px 0; text-align: center;}
+#main_container .join_box .buttons button{ width: 200px; padding: 10px 20px; font-size: 16px; color:#fff; border-radius: 4px; cursor: pointer; border:none; margin: 0 10px;}
+#main_container .join_box .buttons button:nth-child(1):hover {background-color: #aaa;}
+#main_container .join_box .buttons button:nth-child(2) {background-color: #23b100;}
+#main_container .join_box .buttons button:nth-child(2):hover {background-color: #038e00;}
+
+#main_container .sns_login {max-width: 1000px; padding-top: 20px; margin: 0 auto;}
+#main_container .sns_login .sns_login_tit {position: relative; width: 100%; padding: 10px 0 20px;}
+#main_container .sns_login .sns_login_tit .sns_border { position: absolute; width: 100%; top:50%; left:0; transform:translateY(-50%); border-top: 1px solid #ddd;}
+#main_container .sns_login .sns_login_tit span { display: block; position: absolute; top:50%; left:50%; transform: translate(-50%, -50%); font-size: 16px; color: #bbb; background-color: #fff;}
+
+#main_container .sns_login ul {width: 600px; margin: 0 auto; overflow: hidden; padding-top: 20px;}
+#main_container .sns_login ul li { width: calc(100% / 3 - 20px); height: 40px; float: left; margin:0 10px 10px; border-radius: 4px; }
+#main_container .sns_login ul li:nth-child(1) {background-color: #fce74c; } 
+#main_container .sns_login ul li:nth-child(2) {background-color: #63c33d;} 
+#main_container .sns_login ul li:nth-child(3) {background-color: #445a93;} 
+#main_container .sns_login ul li a { display: block; height: 40px; background-size: 25px 25px;background-position: 10px 50%; background-repeat: no-repeat; text-align: center; line-height: 40px; color:#fff; font-size: 16px; font-weight: 400;}
+
+#main_container .sns_login ul li a#kakao_login {background-image: url(../img/kakao.png); color:#555;
+  background-size: 30px 30px;} 
+#main_container .sns_login ul li a#naver_login {background-image: url(../img/naver.png);} 
+#main_container .sns_login ul li a#fbook_login {background-image: url(../img/f_book.png);}
+
+@media(max-width: 566px){
+  #main_container .join_box .form .label {display: block; width:100%; padding-left:5px;}
+  #main_container .join_box .form .input {display: block; width: 100%;}
+  #main_container .join_box .form .add_btn {width: 100%; text-align: right; padding-top:20px; }
+  #main_container .join_box .buttons button {width: 100px;}
+
+  #main_container .sns_login ul {width:220px;}
+  #main_container .sns_login ul li {width: 100%; float: none; margin: 20px 0;}
+}

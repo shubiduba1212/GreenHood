@@ -1,0 +1,65 @@
+@charset "utf-8";
+
+/*login-page*/
+#main_upper_area {width: 100%; height: 240px; margin-top: 150px;  }
+#main_upper_area .frame {width: 600px; height: 200px; position: absolute; left:50%; transform:translateX(-50%);}
+#main_upper_area .frame .m_upper_img { max-width: 600px; height: 100%; margin: 0 auto; background-image: url(../img/login_img.jpg); background-size: cover; background-position: 50% 50%;}
+
+#main_upper_area .frame .m_upper_txt {position: absolute; top:40px; left:40px; color:#fff;}
+#main_upper_area .frame .m_upper_txt h2 {font-size: 44px; text-transform: uppercase;}
+#main_upper_area .frame .m_upper_txt p {padding-top: 20px;font-size: 30px;}
+#main_upper_area .frame .m_upper_txt p span {font-weight: 400;}
+
+#main_container {width: 600px; margin: 0 auto; padding: 0 20px 100px;}
+#main_container .login_box{overflow: hidden; padding: 20px 10px; border-bottom: 1px solid #ddd;}
+#main_container .login_box ul{float: left; width: 85%;}
+#main_container .login_box ul li {height: 40px; margin-bottom: 18px;}
+#main_container .login_box ul li label{float: left; width:20%; line-height: 40px; font-size: 14px; color:#555;}
+#main_container .login_box ul li input{float: left;  width: 75%; padding-left: 20px; line-height: 38px; border:none; background-color: rgba(3,142,0,0.2);}
+#main_container .login_box ul li input:focus {background-color: #fff; color:#555;}
+
+#main_container .login_box .login_btn { float: right; width: 15%; height: 100px;}
+#main_container .login_box .login_btn button { width: 100%; height: 100%; border: none; font-size: 18px; background-color: #23b100; color:#fff; border-radius: 4px; cursor: pointer;}
+
+#main_container .login_box .login_btn:hover button { background-color: #038e00;}
+
+#main_container .join_btn {width: 100%; padding-top: 20px;}
+#main_container .join_btn span {font-size: 14px; }
+#main_container .join_btn span strong{color: #038e00;}
+#main_container .join_btn button { padding: 5px 20px; border: none; font-size: 16px; background-color: #23b100; color:#fff; border-radius: 4px; cursor: pointer; font-weight: bold;}
+#main_container .join_btn button:hover {background-color: #038e00;}
+
+#main_container .sns_login {width: 100%; padding-top: 20px; }
+#main_container .sns_login .sns_login_tit {position: relative; width: 100%; padding: 10px 0 20px;}
+#main_container .sns_login .sns_login_tit .sns_border { position: absolute; width: 100%; top:50%; left:0; transform:translateY(-50%); border-top: 1px solid #ddd;}
+#main_container .sns_login .sns_login_tit span { display: block; position: absolute; top:50%; left:50%; transform: translate(-50%, -50%); font-size: 16px; color: #bbb; background-color: #fff;}
+
+#main_container .sns_login ul {width: 100%; margin: 0 auto; overflow: hidden; padding-top: 20px;}
+#main_container .sns_login ul li { width: calc(100% / 3 - 20px); height: 40px; float: left; margin:0 10px 10px; border-radius: 4px; }
+#main_container .sns_login ul li:nth-child(1) {background-color: #fce74c; } 
+#main_container .sns_login ul li:nth-child(2) {background-color: #63c33d;} 
+#main_container .sns_login ul li:nth-child(3) {background-color: #445a93;} 
+#main_container .sns_login ul li a { display: block; height: 40px; background-size: 25px 25px;background-position: 10px 50%; background-repeat: no-repeat; text-align: center; line-height: 40px; color:#fff; font-size: 16px; font-weight: 400;}
+
+#main_container .sns_login ul li a#kakao_login {background-image: url(../img/kakao.png); color:#555;
+  background-size: 30px 30px;} 
+#main_container .sns_login ul li a#naver_login {background-image: url(../img/naver.png);} 
+#main_container .sns_login ul li a#fbook_login {background-image: url(../img/f_book.png);}
+
+@media(max-width:566px){
+  #main_upper_area .frame {width:100%;}
+  #main_container {width: 100%;}
+  #main_container .login_box ul {float: none; width: 100%;}
+  #main_container .login_box ul li {margin-bottom: 50px;}
+  #main_container .login_box ul li label {float: none; width: 100%;}
+  #main_container .login_box ul li input {display: block; width: 100%;}
+  #main_container .login_box .login_btn {float: none; width: 50%; height: 60px; margin: 0 auto; padding-top: 20px;}
+
+  #main_container .join_btn {text-align: center;}
+  #main_container .join_btn span {display: block; padding-bottom: 20px;}
+  #main_container .sns_login ul {max-width: 250px;}
+  #main_container .sns_login ul li {width: 100%; margin: 10px 0;}
+  
+
+
+}
