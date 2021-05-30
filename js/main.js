@@ -41,7 +41,7 @@ $(document).ready(function(){
     let $h_bottom = -($("#main_01 .frame .right .bottom").height());
     if(!$rb_pause){
       let $first = $("#main_01 .frame .right .bottom .slider li").first();
-      $("#main_01 .frame .right .bottom .slider").animate({"margin-top":$h_bottom+"px"}, 700 ,function(){
+      $("#main_01 .frame .right .bottom .slider").delay(1000).animate({"margin-top":$h_bottom+"px"}, 1000 ,function(){
         $("#main_01 .frame .right .bottom .slider").append($first).css("margin-top","0");
         });
       }else{
