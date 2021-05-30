@@ -149,7 +149,6 @@
 
   $sql = "select * from shopping where tag='new_sem' order by num desc"; //tag='new_sem'제품만 가져오기
   $result = mysqli_query($con, $sql);
-  $row = mysqli_fetch_array($result);
   $total_record = mysqli_num_rows($result);
 
   for($j=0; $j < 2; $j++){
@@ -188,7 +187,6 @@
 
   $sql = "select * from shopping where tag='limited' order by num desc"; //tag='limited'에 해당하는 제품만 가져오기
   $result = mysqli_query($con, $sql);
-  $row = mysqli_fetch_array($result);
   $total_record = mysqli_num_rows($result);
 
   for($j=0; $j < 2; $j++){
@@ -227,7 +225,6 @@
 
   $sql = "select * from shopping where tag='practical' order by num desc"; //tag='practical'에 해당하는 제품만 가져오기
   $result = mysqli_query($con, $sql);
-  $row = mysqli_fetch_array($result);
   $total_record = mysqli_num_rows($result);
 
   for($j=0; $j < 2; $j++){
